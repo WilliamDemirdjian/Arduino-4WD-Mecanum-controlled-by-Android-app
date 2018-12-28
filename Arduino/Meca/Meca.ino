@@ -13,8 +13,6 @@
  *  https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/Apk/meca.apk
  *  See the wiring :
  *  https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/Arduino/Wiring
- *  /!\ The Bluetooth module can be powered with 5 Volts but the RX pin pf HC-05 must be 3.3 Volts.
- *      Because we only have 5 Volts free, we have to make a voltage divider to reduce the voltage by one third (5 * 2/3 = 3.33).
 */
 
 #include "io.h" // Declaration of inputs and outputs
