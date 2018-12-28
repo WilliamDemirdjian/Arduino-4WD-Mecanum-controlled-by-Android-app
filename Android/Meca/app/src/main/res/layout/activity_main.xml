@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundLight"
+    tools:context=".MainActivity">
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/joystick"
+        android:layout_width="276dp"
+        android:layout_height="273dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        custom:JV_backgroundColor="@color/colorPrimary"
+        custom:JV_borderWidth="8dp"
+        custom:JV_buttonColor="@color/colorAccent"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/turnAroundLeftButton"
+        android:layout_width="131dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:scaleX="-1"
+        app:layout_constraintEnd_toStartOf="@+id/speedBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/joystick"
+        app:layout_constraintTop_toTopOf="@+id/joystick"
+        app:srcCompat="@drawable/ic_turn_around_released_512dp" />
+
+    <ImageView
+        android:id="@+id/turnAroundRightButton"
+        android:layout_width="131dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/speedBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/joystick"
+        app:layout_constraintTop_toBottomOf="@+id/turnAroundLeftButton"
+        app:srcCompat="@drawable/ic_turn_around_released_512dp" />
+
+    <SeekBar
+        android:id="@+id/speedBar"
+        android:layout_width="222dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="255"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:rotation="270"
+        android:thumb="@drawable/custom_thumb"
+        android:thumbTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/turnAroundRightButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/turnAroundLeftButton" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/disconnectButton"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_disconnect_24dp" />
+
+</android.support.constraint.ConstraintLayout>
