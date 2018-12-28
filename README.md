@@ -1,5 +1,5 @@
 # Arduino 4WD Mecanum controlled by Android app
-Arduino 4WD Mecanum controlled by an Android app
+Arduino 4WD Mecanum controlled by an Android app using an Arduino Mega 2560, a L293D motor shield and a HC-05 Bluetooth Module.
 
 ## Application
 The APK of the application can be downloaded here [APK][1].
@@ -37,7 +37,7 @@ The application contains:
 
 <strong>Don't forget to cross RX and TX!</strong>
 
-### Motor shield wiring
+### Motor shield wiring (L293D)
 
 <p align="center"><img src="https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/blob/master/Arduino/Wiring/L293D_motor_shield.png" width="600"></p>
 
