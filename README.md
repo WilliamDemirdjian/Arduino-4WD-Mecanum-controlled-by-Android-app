@@ -8,7 +8,7 @@ The APK of the application can be downloaded here [APK][1].
 ### How to use the application?
 1. Switch on the Arduino and the HC-05 Bluetooth module. 
 2. On your smartphone, scan the available Bluetooth devices and associate with the HC-05 Bluetooth module with the default password "1234".
-![][2]
+![][2 | width=100]
 3. Install and start the application.
 4. Select the HC-05 Bluetooth module.
 ![][3]
@@ -21,7 +21,7 @@ The APK of the application can be downloaded here [APK][1].
 
 ## Author
 -------
-WilliamDemirci
+[WilliamDemirci]
 
 ## License
 -------
@@ -37,4 +37,5 @@ Tell me if I can optimize the code or if there are any errors. I'm a newbie.
 [3]: https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/blob/master/Android/Screenshots/mecanum%20wheel%20app%20select%20bluetooth%20module.png
 [4]: https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/blob/master/Android/Screenshots/mecanum%20wheel%20app.png
 [5]: https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/blob/master/Android/Screenshots/mecanum%20wheel%20app%20night%20mode.png
+[9]: https://github.com/WilliamDemirci
 [10]: https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/blob/master/LICENSE
