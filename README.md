@@ -41,9 +41,34 @@ The application contains:
 
 <p align="center"><img src="https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/blob/master/Arduino/Wiring/L293D_motor_shield.png" width="600"></p>
 
-### How is the robot controlled ?
+### How is the robot controlled?
 
 <p align="center"><img src="https://github.com/WilliamDemirci/Arduino_4WD_Mecanum_controlled_by_Android_app/blob/master/Arduino/Movements/mecanum%20wheel%20movement.png" width="600"></p>
+
+### Frame format
+
+The frames are in the following form:
+sxxyyy
+<br>- "s" for "start" allows us to know when a frame starts
+<br>- "xx" is the value of the movement performed by the user. For example, if the joystick is pushed forward to go straight, the movement will be "03".
+<br>- "yyy" is the value of the speed chosen by the user. For example, if the speed is at maximum, the value will be "255".
+
+For this example, the final result is as follows: s03255
+
+To summarize: 1 header letter + two movement digits + three speed digits
+
+## How to use the application on another robot?
+
+1. Retrieve the data received by Bluetooth and separate them if necessary
+
+    <br>receivedData = Serial1.readStringUntil('s'); // split received data into frames delimited by a 's'
+    <br>move = receivedData.substring(0,2).toInt(); // split two first digits to get movement value
+    <br>speed = receivedData.substring(2,5).toInt(); // split three last digits to get speed value
+
+2. Perform the processing according to the data received.
+
+    <br>For example:
+      <br>moveRobot(move, speed);
 
 ## Author
 [WilliamDemirci][9]
