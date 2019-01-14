@@ -3,6 +3,7 @@ Arduino 4WD Mecanum controlled by an Android app using an Arduino Mega 2560, a L
 
 ## Application
 The APK of the application can be downloaded here [APK][1].
+<br><a href="https://play.google.com/store/apps/details?id=comwilliamdemirci.github.meca" target="_blank"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="90"/></a>
 
 ### How to use the application?
 1. Switch on the Arduino and the HC-05 Bluetooth module.
